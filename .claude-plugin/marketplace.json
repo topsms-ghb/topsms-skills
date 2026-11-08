@@ -1,0 +1,23 @@
+{
+  "name": "topsms",
+  "description": "Official TopSMS plugins: Agent Skills for the TopSMS SMS API and the TopSMS remote MCP server.",
+  "owner": {
+    "name": "TopSMS",
+    "email": "info@topsms.eu",
+    "url": "https://topsms.eu"
+  },
+  "plugins": [
+    {
+      "name": "topsms",
+      "source": "./",
+      "description": "Seven skills for the TopSMS SMS API (knowledge) plus the TopSMS remote MCP server with OAuth sign-in (action).",
+      "category": "integrations",
+      "tags": [
+        "sms",
+        "otp",
+        "mcp",
+        "webhooks"
+      ]
+    }
+  ]
+}

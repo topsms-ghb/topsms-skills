@@ -1,0 +1,31 @@
+{
+  "name": "topsms",
+  "displayName": "TopSMS",
+  "version": "1.0.0",
+  "description": "SMS for coding agents: seven skills that teach the TopSMS SMS API (auth, sending, scheduling, delivery reports and webhooks, OTP Verify API, GSM-7/UCS-2 length, integrations, compliance) plus the official TopSMS remote MCP server (OAuth) for sending.",
+  "author": {
+    "name": "TopSMS",
+    "email": "info@topsms.eu",
+    "url": "https://topsms.eu"
+  },
+  "homepage": "https://topsms.eu/ai",
+  "repository": "https://github.com/topsms-ghb/topsms-skills",
+  "license": "MIT",
+  "keywords": [
+    "sms",
+    "sms-api",
+    "sms-gateway",
+    "otp",
+    "2fa",
+    "webhooks",
+    "mcp",
+    "topsms",
+    "bulk-sms",
+    "europe"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://topsms.eu/docs",
+  "supportUrl": "https://topsms.eu/contact",
+  "privacyPolicyUrl": "https://topsms.eu/privacy-policy",
+  "termsOfServiceUrl": "https://topsms.eu/terms"
+}

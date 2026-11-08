@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "topsms": {
+      "type": "http",
+      "url": "https://topsms.eu/api/mcp"
+    }
+  }
+}
