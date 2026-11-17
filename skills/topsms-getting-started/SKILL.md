@@ -9,11 +9,12 @@ metadata:
 
 # TopSMS: getting started
 
-TopSMS is a prepaid SMS gateway. One REST API serves both brands:
+TopSMS (topsms.eu / topsms.cz) is a prepaid SMS gateway with two sites. One REST API serves both:
 
 | | topsms.eu | topsms.cz |
 |---|---|---|
-| Market | Germany, Austria, rest of EU (EN/DE site) | Czechia, Slovakia (CZ site) |
+| Market | Germany, Austria and the EU (site in English, German, Italian, Spanish, Portuguese) | Czechia, Slovakia (site in Czech and Slovak) |
+| Sign-up credit | €0.50 (about 5 SMS) | 10 test SMS |
 | Account currency | EUR | CZK |
 | Amounts in API responses | EUR, prices to 4 decimals | CZK |
 | Docs | https://topsms.eu/docs, https://topsms.eu/de/docs | https://www.topsms.cz/api-integrace/rest-api |
@@ -76,7 +77,7 @@ Success (`200`):
   "to": "+4915112345678",
   "from": "TopSMS",
   "smsCount": 1,
-  "price": 0.084,
+  "price": 0.089,
   "status": "sent",
   "currency": "EUR"
 }
@@ -90,10 +91,12 @@ Success (`200`):
 Check the balance with `GET /api/credit` (scope `read`):
 
 ```json
-{ "ok": true, "credit": 12.4, "currency": "EUR", "smsPrice": 0.0403 }
+{ "ok": true, "credit": 12.4, "currency": "EUR", "smsPrice": 0.089 }
 ```
 
-`smsPrice` is the account's base price per segment (for EUR accounts this is the converted CZ/SK base tier; the EU destination price is listed at https://topsms.eu/pricing.json). Public prices: https://topsms.eu/pricing (EU) and https://www.topsms.cz/cenik (CZ).
+`credit` and `smsPrice` are in the account currency (`currency`). `smsPrice` is the account's price per segment; other destinations can cost more or less, so read `price` from each send response and take per-destination prices from https://topsms.eu/pricing.json. A CZK account answers for example `{ "ok": true, "credit": 480.5, "currency": "CZK", "smsPrice": 0.99 }`.
+
+Public prices: https://topsms.eu/pricing (EUR accounts), https://www.topsms.cz/cenik (CZK accounts), per country https://topsms.eu/countries. Prepaid credit, no monthly fee, no setup fee; credit never expires. Do not quote prices from memory; they change.
 
 ## Errors
 

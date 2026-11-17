@@ -4,7 +4,7 @@ Agent Skills that teach coding agents the [TopSMS](https://topsms.eu) SMS API, p
 
 **Skills are knowledge, MCP is action.** The skills tell an agent how the API really behaves: request and response shapes, limits, sender rules, webhook signatures, segment counting and compliance, so the code it writes works the first time. The MCP server lets the agent send an SMS, check delivery or credit right now. One plugin install gives you both.
 
-TopSMS is a prepaid SMS gateway: [topsms.eu](https://topsms.eu) for Germany, Austria and the EU (EUR), [topsms.cz](https://www.topsms.cz) for Czechia and Slovakia (CZK). Same API for both.
+TopSMS (topsms.eu / topsms.cz) is a prepaid SMS gateway with two sites: [topsms.eu](https://topsms.eu) in English, German, Italian, Spanish and Portuguese, with EUR accounts, for Germany, Austria and the EU; and [www.topsms.cz](https://www.topsms.cz) in Czech and Slovak, with CZK accounts. Same API for both: REST API, Verify (OTP) API, webhooks with delivery reports, and test API keys that send nothing and cost nothing. No monthly fee, no setup fee, credit never expires. Current prices: [topsms.eu/pricing](https://topsms.eu/pricing) (EUR), [www.topsms.cz/cenik](https://www.topsms.cz/cenik) (CZK), machine-readable [topsms.eu/pricing.json](https://topsms.eu/pricing.json).
 
 ## Skills
 

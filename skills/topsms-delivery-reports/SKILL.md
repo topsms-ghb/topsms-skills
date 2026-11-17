@@ -53,7 +53,7 @@ curl -sS -H "Authorization: Bearer $TOPSMS_CLIENT_ID:$TOPSMS_SECRET" \
   "from": "MyShop",
   "text": "Your order 1024 has shipped.",
   "status": "delivered",
-  "price": 0.084,
+  "price": 0.089,
   "carrier": "262.1",
   "createdAt": "2026-11-08T09:00:00.000Z",
   "deliveredAt": "2026-11-08T09:00:04.000Z",
@@ -80,7 +80,7 @@ Content-Type: application/json
 User-Agent: TopSMS-Webhook/1.1
 X-TopSMS-Signature: sha256=5f0c...e91a
 
-{"event":"sms.status","id":"cmh3x9k2a0001qz8l5v7w2abc","externalId":"8d1f...","to":"+4915112345678","from":"MyShop","status":"delivered","price":0.084,"currency":"EUR","deliveredAt":"2026-11-08T09:00:04.000Z","failedAt":null,"errorMessage":null,"errorCode":null,"sentAt":"2026-11-08T09:00:05.120Z"}
+{"event":"sms.status","id":"cmh3x9k2a0001qz8l5v7w2abc","externalId":"8d1f...","to":"+4915112345678","from":"MyShop","status":"delivered","price":0.089,"currency":"EUR","deliveredAt":"2026-11-08T09:00:04.000Z","failedAt":null,"errorMessage":null,"errorCode":null,"sentAt":"2026-11-08T09:00:05.120Z"}
 ```
 
 | Field | Notes |

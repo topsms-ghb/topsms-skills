@@ -39,7 +39,7 @@ Tools (each calls the same REST handler, so all REST rules apply):
 | `cancel_scheduled` | Cancel and refund a scheduled or not-started batch | `DELETE /api/sms/jobs/{id}` |
 | `verify_send` | Send an OTP (5 per number per hour, 30 s apart) | `POST /api/verify/send` |
 | `verify_check` | Check an OTP (5 attempts) | `POST /api/verify/check` |
-| `get_credit` | Balance and base price | `GET /api/credit` |
+| `get_credit` | Balance and price per SMS in the account currency (EUR or CZK) | `GET /api/credit` |
 | `get_pricing` | Public price list, no login needed | `/pricing.json` |
 
 Connect:

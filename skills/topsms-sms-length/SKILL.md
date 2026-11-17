@@ -48,7 +48,7 @@ When generating SMS text with an LLM, ask for plain ASCII punctuation and check 
 
 Price per segment depends on the destination and the account (EUR for topsms.eu, CZK for topsms.cz). Current public prices: https://topsms.eu/pricing and https://topsms.eu/pricing.json (EU accounts), https://www.topsms.cz/cenik and https://www.topsms.cz/pricing.json (CZ accounts). Do not hard-code prices; read `price` from the send response or the pricing JSON (the MCP tool `get_pricing` returns it too).
 
-Example (illustrative prices, check pricing.json): a German shipping notice of 140 GSM characters to `+49` = 1 segment. The same text with one `–` dash = UCS-2 = 140/67 = 3 segments, three times the price.
+Example: a German shipping notice of 140 GSM characters to `+49` = 1 segment. The same text with one `–` dash = UCS-2 = 140/67 = 3 segments, three times the price (in November 2026: €0.089 vs €0.267 on an EUR account; check pricing.json for the current price).
 
 ## Check a text before sending
 

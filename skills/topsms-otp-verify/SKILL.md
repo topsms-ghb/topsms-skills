@@ -49,7 +49,7 @@ Response `200`:
 
 ```json
 { "ok": true, "id": "cmhv0x...", "to": "+4915112345678", "status": "pending",
-  "expiresAt": "2026-11-08T09:05:00.000Z", "messageId": "cmhv0y...", "price": 0.084, "currency": "EUR" }
+  "expiresAt": "2026-11-08T09:05:00.000Z", "messageId": "cmhv0y...", "price": 0.089, "currency": "EUR" }
 ```
 
 With a **test key** nothing is sent or charged, `messageId` is `null`, and the response adds `"test": true, "testCode": "123456"` (the first `length` digits of `12345678`). Use this in automated tests; never enable test keys in production.

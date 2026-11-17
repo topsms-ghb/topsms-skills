@@ -68,8 +68,8 @@ Job status (`GET /api/sms/jobs/{jobId}`, add `?results=0` for counters only):
 
 ```json
 { "id": "cmg...", "status": "running", "sendAt": null, "total": 120, "sent": 80, "failed": 1, "queued": 39,
-  "price": 10.08, "createdAt": "...", "startedAt": "...", "finishedAt": null, "error": null,
-  "results": [ { "id": "...", "to": "+49...", "status": "delivered", "externalId": "...", "price": 0.084, "error": null, "errorCode": null } ] }
+  "price": 10.68, "createdAt": "...", "startedAt": "...", "finishedAt": null, "error": null,
+  "results": [ { "id": "...", "to": "+49...", "status": "delivered", "externalId": "...", "price": 0.089, "error": null, "errorCode": null } ] }
 ```
 
 Job `status`: `scheduled`, `queued`, `running`, `done`, `failed`, `cancelled`. `results` lists at most 500 messages.
